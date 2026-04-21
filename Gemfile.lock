@@ -1,36 +1,52 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.8)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
+    activesupport (8.1.3)
+      base64
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.3.1)
+      connection_pool (>= 2.2.5)
+      drb
       i18n (>= 1.6, < 2)
+      json
+      logger (>= 1.4.2)
       minitest (>= 5.1)
-      tzinfo (~> 2.0)
-    concurrent-ruby (1.2.2)
-    curb (1.0.5)
-    i18n (1.14.1)
+      securerandom (>= 0.3)
+      tzinfo (~> 2.0, >= 2.0.5)
+      uri (>= 0.13.1)
+    base64 (0.3.0)
+    bigdecimal (4.1.2)
+    concurrent-ruby (1.3.6)
+    connection_pool (3.0.2)
+    curb (1.3.1)
+    drb (2.2.3)
+    i18n (1.14.8)
       concurrent-ruby (~> 1.0)
-    minitest (5.20.0)
-    openssl (3.2.0)
-    parallel (1.23.0)
+    json (2.19.4)
+    logger (1.7.0)
+    minitest (6.0.5)
+      drb (~> 2.0)
+      prism (~> 1.5)
+    openssl (4.0.1)
+    parallel (2.0.1)
+    prism (1.9.0)
     ruby-progressbar (1.13.0)
-    simpleidn (0.2.1)
-      unf (~> 0.1.4)
+    securerandom (0.4.1)
+    simpleidn (0.2.3)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.9)
-    whois (5.1.1)
+    uri (1.1.1)
+    whois (6.0.3)
     whois-parser (2.0.0)
       activesupport (>= 4)
       whois (>= 4.1.0)
 
 PLATFORMS
+  arm64-darwin-23
   x86_64-darwin-19
 
 DEPENDENCIES
-  activesupport (~> 7.0.8)
+  activesupport (~> 8.1)
   curb
   openssl
   parallel
@@ -40,4 +56,4 @@ DEPENDENCIES
   whois-parser
 
 BUNDLED WITH
-   2.2.31
+   2.5.16

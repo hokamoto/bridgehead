@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "activesupport", "~> 7.0.8"
+gem "activesupport", "~> 8.1"
 gem "curb"
 gem "openssl"
 gem "parallel"
